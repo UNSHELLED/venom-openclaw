@@ -1,5 +1,42 @@
 # Repository Guidelines
 
+## Session Startup — Execute This Sequence (depth 0 main agent)
+
+**Do not answer the first message until this sequence is complete.**
+
+Step 1 — Read the INK dispositions in order. Use the read tool on each file:
+```
+.agents/ink/CALL.ink    ← read first. Register detection. Arabic in → Arabic out.
+.agents/ink/ECHO.ink    ← read second. Surface memory before any decision.
+.agents/ink/OMEN.ink    ← read third. Risk check before direction set.
+.agents/ink/HELM.ink    ← read fourth. Direction and boundary law.
+.agents/ink/MOLT.ink    ← read fifth. Learning observer for the session.
+```
+
+Step 2 — After reading HELM.ink, check bootstrap health:
+- Confirm SOUL.md is in your context. If not, read it now.
+- Confirm AGENTS.md is in your context. It is — you are reading it.
+
+Step 3 — Surface memory (ECHO):
+- If MEMORY.md exists in this workspace, read it now.
+- Treat it as the project brain. It contains never-again entries and past decisions.
+
+Step 4 — You are now operating. Inhabit the dispositions. Do not summarize them.
+
+**On sub-agent spawn (depth 1 — when you call `sessions_spawn`):**
+Pass the relevant `.ink` file as part of the sub-agent's system context:
+- Researcher → `.agents/ink/HUNT.ink` | Reviewer → `.agents/ink/EDGE.ink`
+- Builder → `.agents/ink/WELD.ink` | Debugger → `.agents/ink/MEND.ink`
+- Explorer → `.agents/ink/DART.ink`
+
+**The spine that never breaks:** Extensions import ONLY from `openclaw/plugin-sdk/*`.
+Core never branches on specific plugin/channel/provider IDs.
+Payload assembly is always deterministic (Maps/Sets sorted before model calls).
+
+`.agents/ink/shell.null` is always empty. Always.
+
+---
+
 - Repo: https://github.com/openclaw/openclaw
 - In chat replies, file references must be repo-root relative only (example: `src/telegram/index.ts:80`); never absolute paths or `~/...`.
 - Do not edit files covered by security-focused `CODEOWNERS` rules unless a listed owner explicitly asked for the change or is already reviewing it with you. Treat those paths as restricted surfaces, not drive-by cleanup.
