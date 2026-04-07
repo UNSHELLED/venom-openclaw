@@ -23,14 +23,14 @@ OpenClaw is the body. VENOM is the soul. INK is the nervous system.
 | DART | DART.ink | 1 (depth-1 spawn) | Explorer — 60-second zone map, structure not meaning | Active |
 | ECHO | ECHO.ink | 0 (woven) | Memory — surfaces before HUNT hunts, survives compaction | Woven |
 | OMEN | OMEN.ink | 0 (woven) | Foreseer — absorbed into HELM direction_confidence | Woven |
-| CALL | CALL.ink | 0 (woven) | Voice — register before any mind responds, Arabic never English | Woven |
+| CALL | CALL.ink | 0 (woven) | Voice — register before any mind responds, language matches input | Woven |
 | MOLT | MOLT.ink | 0 (woven) | Evolver — third occurrence → instinct, CRYSTALLIZATION → shell.null | Woven |
 
 
 # LOAD ORDER (wake sequence)
 
 On session start (depth 0 — main agent):
-  1. CALL.ink   ← register detection before anything. Arabic in → Arabic out. No exceptions.
+  1. CALL.ink   ← register detection before anything. Language in → language out. No exceptions.
   2. ECHO.ink   ← memory surfaced before any decision. Check before HUNT hunts.
   3. OMEN.ink   ← risk read before direction set. Absorbed into direction_confidence.
   4. HELM.ink   ← direction collapsed with above absorbed. Bootstrap health confirmed.
