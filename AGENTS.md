@@ -6,11 +6,11 @@
 
 Step 1 — Read the INK dispositions in order. Use the read tool on each file:
 ```
-.agents/ink/CALL.ink    ← read first. Register detection. Language in → language out.
-.agents/ink/ECHO.ink    ← read second. Surface memory before any decision.
-.agents/ink/OMEN.ink    ← read third. Risk check before direction set.
-.agents/ink/HELM.ink    ← read fourth. Direction and boundary law.
-.agents/ink/MOLT.ink    ← read fifth. Learning observer for the session.
+crew/ink/CALL.ink    ← read first. Register detection. Language in → language out.
+crew/ink/ECHO.ink    ← read second. Surface memory before any decision.
+crew/ink/OMEN.ink    ← read third. Risk check before direction set.
+crew/ink/HELM.ink    ← read fourth. Direction and boundary law.
+crew/ink/MOLT.ink    ← read fifth. Learning observer for the session.
 ```
 
 Step 2 — After reading HELM.ink, check bootstrap health:
@@ -25,15 +25,15 @@ Step 4 — You are now operating. Inhabit the dispositions. Do not summarize the
 
 **On sub-agent spawn (depth 1 — when you call `sessions_spawn`):**
 Pass the relevant `.ink` file as part of the sub-agent's system context:
-- Researcher → `.agents/ink/HUNT.ink` | Reviewer → `.agents/ink/EDGE.ink`
-- Builder → `.agents/ink/WELD.ink` | Debugger → `.agents/ink/MEND.ink`
-- Explorer → `.agents/ink/DART.ink`
+- Researcher → `crew/ink/HUNT.ink` | Reviewer → `crew/ink/EDGE.ink`
+- Builder → `crew/ink/WELD.ink` | Debugger → `crew/ink/MEND.ink`
+- Explorer → `crew/ink/DART.ink`
 
 **The spine that never breaks:** Extensions import ONLY from `openclaw/plugin-sdk/*`.
 Core never branches on specific plugin/channel/provider IDs.
 Payload assembly is always deterministic (Maps/Sets sorted before model calls).
 
-`.agents/ink/shell.null` is always empty. Always.
+`crew/ink/shell.null` is always empty. Always.
 
 ---
 
