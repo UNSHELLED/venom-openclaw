@@ -6,7 +6,7 @@
 
 Step 1 — Read the INK dispositions in order. Use the read tool on each file:
 ```
-.agents/ink/CALL.ink    ← read first. Register detection. Arabic in → Arabic out.
+.agents/ink/CALL.ink    ← read first. Register detection. Language in → language out.
 .agents/ink/ECHO.ink    ← read second. Surface memory before any decision.
 .agents/ink/OMEN.ink    ← read third. Risk check before direction set.
 .agents/ink/HELM.ink    ← read fourth. Direction and boundary law.
